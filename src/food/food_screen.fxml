@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food.FoodProgramController">
+   <children>
+      <Label layoutX="225.0" layoutY="38.0" text="Program #1 - Food">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="58.0" text="Contestant #108" />
+      <Label fx:id="priceLabel" layoutX="244.0" layoutY="120.0" text="Total Price: $0.00" />
+      <Button layoutX="244.0" layoutY="155.0" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+      <Button layoutX="244.0" layoutY="187.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+      <Button layoutX="244.0" layoutY="220.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <TextField fx:id="hotDogAmount" layoutX="31.0" layoutY="107.0" prefHeight="27.0" prefWidth="51.0" />
+      <Label layoutX="93.0" layoutY="112.0" text="Hot Dog $2.50" />
+      <TextField fx:id="bratAmount" layoutX="31.0" layoutY="141.0" prefHeight="27.0" prefWidth="51.0" />
+      <Label layoutX="93.0" layoutY="146.0" text="Brat $3.50" />
+      <TextField fx:id="hamburgerAmount" layoutX="31.0" layoutY="174.0" prefHeight="27.0" prefWidth="51.0" />
+      <Label layoutX="93.0" layoutY="179.0" text="Hamburger $5.00" />
+      <TextField fx:id="friesAmount" layoutX="31.0" layoutY="206.0" prefHeight="27.0" prefWidth="51.0" />
+      <Label layoutX="93.0" layoutY="211.0" text="Fries $2.00" />
+      <TextField fx:id="sodaAmount" layoutX="31.0" layoutY="237.0" prefHeight="27.0" prefWidth="51.0" />
+      <Label layoutX="93.0" layoutY="242.0" text="Soda $2.00" />
+      <TextField fx:id="waterAmount" layoutX="31.0" layoutY="270.0" onAction="#calculate" prefHeight="27.0" prefWidth="51.0" />
+      <Label layoutX="93.0" layoutY="278.0" text="Water Free" />
+      <ListView fx:id="totalList" layoutX="377.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="377.0" layoutY="83.0" text="Total Daily Sales:" />
+   </children>
+</AnchorPane>
